@@ -1,0 +1,53 @@
+package com.cice.ejercicios;
+
+import java.util.Scanner;
+
+public class MainEjercicio01 {
+
+	public static void main(String[] args) {
+		
+	// 1 - Filas de números impares: Crea un programa que solicite al usuario 
+	// el número de filas e imprima en pantalla en tantas filas como indique 
+	// secuencias de números impares ordenados de longitud creciente, estando formada 
+	// la primera fila simplemente por el número 1. Por ejemplo, si el usuario solicitara 
+	// 4 filas obtendría esto:
+
+		int numImpar, numFilas;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Número de filas que deseas");
+		numFilas = sc.nextInt();
+		
+		System.out.println();
+		
+		for (int i=0; i<numFilas; i++){
+			numImpar = 1;
+			for (int j=0; j<=i; j++){
+				System.out.print(numImpar + " ");
+			numImpar = numImpar + 2;
+			}
+			System.out.println();
+		}		    
+   }
+}
+
+=======================================================================================================================================
+package com.cice.ejercicios;
+
+public class MainEjercicio02 {
+
+	public static void main(String[] args) {
+		
+	// 2 - Presentar en consola las tablas de multiplicar del 1 al 10, como se 
+	//muestra en la imagen.
+
+		for(int tab = 1; tab<=10; tab++){
+			System.out.println("      ");
+			System.out.println("Tabla del " + tab);
+			System.out.println("-----------");
+			for(int num = 1; num<=10; num++){
+				System.out.println(tab +" x "+ num + " = "+ tab * num);
+			}		
+		}
+	}
+}
